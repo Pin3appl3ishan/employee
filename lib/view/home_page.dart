@@ -1,3 +1,4 @@
+import 'package:employee/view/date_time_view.dart';
 import 'package:flutter/material.dart';
 import 'employee_view.dart';
 import 'employee_table_view.dart';
@@ -15,6 +16,7 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> _screens = const [
     EmployeeView(),
     EmployeeTableView(),
+    DateTimeView(),
   ];
 
   void _onItemTapped(int index) {
@@ -24,8 +26,9 @@ class _HomePageState extends State<HomePage> {
   }
 
   final List<BottomNavigationBarItem> _bottomNavItems = const [
-    BottomNavigationBarItem(icon: Icon(Icons.person), label: 'List'),
+    BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Lit'),
     BottomNavigationBarItem(icon: Icon(Icons.table_chart), label: 'Table'),
+    BottomNavigationBarItem(icon: Icon(Icons.date_range), label: 'Date'),
   ];
 
   @override
