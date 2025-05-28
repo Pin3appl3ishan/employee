@@ -1,3 +1,4 @@
+import 'package:employee/themes/theme_data.dart';
 import 'package:employee/view/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -14,9 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Employee Management',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-      ),
+      theme: appTheme(),
       home: const HomePage(),
     );
   }
