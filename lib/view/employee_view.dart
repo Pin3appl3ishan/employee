@@ -44,9 +44,7 @@ class _EmployeeViewState extends State<EmployeeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Employee",
-        style: TextStyle(color: Colors.white),
-        ),
+        title: const Text("Employee", style: TextStyle(color: Colors.white)),
         centerTitle: true,
         backgroundColor: Colors.blue,
         elevation: 0,
